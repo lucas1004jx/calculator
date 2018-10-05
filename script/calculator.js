@@ -209,22 +209,7 @@ $(function () {
   precision: 64        // Number of significant digits for BigNumbers
 });
     
-    //-----------position calculator-------------
-    function center(){
-        var wWidth=$(".wrap").width();
-        var wHeight=$(".wrap").height();
-        var width=$("#main").width();
-        var height=$("#main").height();
-      
-        $("#main").css({
-            "top":(wHeight-height)/2,
-            "left":(wWidth-width)/2
-        });
-         
-    }
-    
-    center();
-    $(window).resize(center);
+
     
     //--------------initialize slide menu-------------
     var controller = new slidebars();

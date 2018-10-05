@@ -1,11 +1,12 @@
 @import "sass_modules/normalize";
 @import "sass_modules/variable";
 @import "sass_modules/mixins";
-@import "sass_modules/slidebar";
 @import "sass_modules/social";
 
 #body{
     width: 100%;
+    height:100vh;
+    min-height:100vh; 
     background: url("../image/background.png") no-repeat center center;
     background-size: cover;
     overflow: scroll;
@@ -14,23 +15,27 @@
 
 
 .wrap{
-    width: 100%;
-    height: calc(100% - 32px);
-    min-width: 300px;
+    width: 90%;
+    max-width:300px;
+    min-height: 280px;
     min-height: 500px;
     position: relative;
-    
+    display:block;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%); 
 }
 #main{
-    width: 300px;
-    height:500px;
-    min-width: 300px;
+    width: 100%;
+    height:auto;
     margin: 0 auto;
     font-family: $main-font;
     position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
     #screen-upper{
         width: 100%;
-        height: 20%;
         background: $white;
         border: 1px solid $black;
         display:-webkit-box;
@@ -52,7 +57,6 @@
     }
     #screen-lower{
         width: 100%;
-        height: 10%;
         background: $white;
         border: 1px solid $black;
         color:rgba($black,0.5);
@@ -76,7 +80,6 @@
     #history{
         background: $grey;
         width: 100%;
-        height:5%;
         color:$yellow;
         text-align: center;
         p{
@@ -106,7 +109,6 @@
         -webkit-box-align: stretch;
         -ms-flex-align: stretch;
         align-items: stretch;
-        height: 65%;
        button{
         background: $purple-blue;
          width: 25%;
@@ -158,15 +160,6 @@
         }
 }
     
-    @include break(481px,1199px){
-        width: 400px;
-        height: 666px;
-    }
-    @include break(1200px){
-        width: 500px;
-        height: 833px;
-    }
-
     
 }
 
