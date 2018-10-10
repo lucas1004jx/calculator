@@ -496,7 +496,7 @@ city theme #D9598A(rgb(202,19,88)) #1CAFC0(rgb(28, 175, 192)) #FECA47 #83C25A(rg
 #body {
   width: 100%;
   height: 100vh;
-  min-height: 100vh;
+  min-height: 600px;
   background: url("../image/background.png") no-repeat center center;
   background-size: cover;
   overflow: scroll;
@@ -505,8 +505,6 @@ city theme #D9598A(rgb(202,19,88)) #1CAFC0(rgb(28, 175, 192)) #FECA47 #83C25A(rg
 .wrap {
   width: 90%;
   max-width: 300px;
-  min-height: 280px;
-  min-height: 500px;
   position: relative;
   display: block;
   top: 50%;

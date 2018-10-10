@@ -211,19 +211,5 @@ $(function () {
     
 
     
-    //--------------initialize slide menu-------------
-    var controller = new slidebars();
-  controller.init();
-    $( '#menu' ).on( 'click', function ( event ) {
-  // Stop default action and bubbling
-  event.stopPropagation();
-  event.preventDefault();
-
-  // Toggle the Slidebar with id 'id-1'
-  controller.toggle( 'id-1' );
-} );
-    $( '#main,#body' ).click(function(){
-        controller.close( 'id-1' );
-    });
-    
+   
 });
